@@ -77,9 +77,3 @@ int evalTree(node *root){
         return lval*rval;
     return lval/rval;
 }
-
-
-
-
-
-
