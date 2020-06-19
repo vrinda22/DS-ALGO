@@ -56,9 +56,9 @@ int searchh(int a[],int x,int n){
 void printPostOrder(int in[], int pre[], int n)
 {
     int root=searchh(in,pre[0],n);
-    if(root!=0)
+    if(root!=0)   //if left subtree is not empty, print left subtree
         printPostOrder(in,pre+1,root);
-    if(root!=n-1)
+    if(root!=n-1) //if right subtree is not empty, print right subtree
         printPostOrder(in+root+1,pre+root+1,n-root-1);
     cout<<pre[0]<<" ";
 }
